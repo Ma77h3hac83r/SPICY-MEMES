@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">Meme Editor</div>
+        <nav>
+            <div class="nav-container">
+                <button id="backToHome">Back to Home</button>
+                <button id="darkModeToggle">Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="editor-container">
+        <div class="meme-info">
+            <div class="meme-filename" id="memeFilename"></div>
+            <div class="meme-tags" id="memeTags"></div>
+        </div>
+        <canvas id="memeCanvas"></canvas>
+        <div id="controls">
+            <input type="text" id="topText" placeholder="Top text">
+            <input type="text" id="bottomText" placeholder="Bottom text">
+            <button id="saveMeme">Save Meme</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="banner">Create your meme!</div>
+    </footer>
+
+    <script src="editor.js"></script>
+</body>
+</html>

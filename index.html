@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPICY MEMES</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="banner">Welcome to Meme Generator</div>
+      <nav>
+        <div class="nav-container">
+          <button id="homeBtn">Home</button>
+          <button id="newBtn">New</button>
+          <button id="darkModeToggle">Dark Mode</button>
+        </div>
+      </nav>
+    </header>
+
+    <div id="searchContainer">
+      <div id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search by tags..." />
+        <button id="searchSubmit">Search</button>
+      </div>
+    </div>
+
+    <main>
+      <div id="gallery"></div>
+    </main>
+
+    <footer>
+      <div class="banner">classification</div>
+    </footer>
+
+    <div id="newMemePopup" class="popup">
+      <div class="popup-content">
+        <h2>Upload New Meme</h2>
+        <input type="file" id="memeImageUpload" accept="image/*" />
+        <input
+          type="text"
+          id="memeTags"
+          placeholder="Enter tags (comma-separated)"
+        />
+        <small
+          >Enter tags separated by commas, only alphanumeric characters, no
+          spaces, dashes or hyphes.</small
+        >
+        <button id="submitNewMeme">Upload Meme</button>
+        <button id="cancelNewMeme">Cancel</button>
+      </div>
+    </div>
+
+    <script src="memeData.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
